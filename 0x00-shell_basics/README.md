@@ -2,3 +2,4 @@
 1-listit - list files and directories
 2-bring_me_home - takes me from working directory to the home directory
 3-listfiles - long list of files
+4-listmorefiles - Display current directory contents, including hidden files (starting with .). Use the long format.
