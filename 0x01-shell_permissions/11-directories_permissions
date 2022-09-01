@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod g+xx *
+chmod ugo+x
