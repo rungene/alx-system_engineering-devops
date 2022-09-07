@@ -8,3 +8,4 @@
 9-divide_and_rule - Write a script that prints the result of POWER divided by DIVIDE, followed by a new line.
 13-print_float - a script that prints a number with two decimal places, followed by a new line.
 12-combinations - Create a script that prints all possible combinations of two letters, except oo.
+11-binary_to_decimal - Write a script that converts a number from base 2 to base 10.
