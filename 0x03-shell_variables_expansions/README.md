@@ -11,3 +11,4 @@
 11-binary_to_decimal - Write a script that converts a number from base 2 to base 10.
 10-love_exponent_breath - Write a script that displays the result of BREATH to the power LOVE
 3-paths - a script that counts the number of directories in the PATH
+100-decimal_to_hexadecimal -  a script that converts a number from base 10 to base 16.
