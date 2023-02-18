@@ -1,6 +1,6 @@
 # Command line for the win
 
- <span style="color:red">some **Bash Scripting** text</span>
+ <span style="color:#FF0000">**Bash Scripting**</span>
 
  ![Command Challenge](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/324/06AChAO.png)
 
