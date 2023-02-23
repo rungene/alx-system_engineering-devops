@@ -113,3 +113,8 @@ Write a Bash script that displays Best School 10 times.
 Requirement:
 
 	- You must use the for loop (while and until are forbidden)
+
+Note that: 
+
+	- The first line of my Bash script starts with #!/usr/bin/env bash
+	- The second line of my Bash scripts is a comment explaining what it is doing
