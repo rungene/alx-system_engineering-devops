@@ -88,3 +88,17 @@ Requirements:
 
 	- You cannot use pgrep
 	- The third line of your script must be # shellcheck disable=SC2009 (for more info about ignoring shellcheck error [here](https://github.com/koalaman/shellcheck/wiki/Ignore))
+
+**3. Show your Bash PID made easy**
+
+Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
+
+Requirements:
+	
+	- You cannot use ps
+
+Here we can see that: 
+
+	- For the first iteration: bash PID is 4404 and that the 3-show_your_bash_pid_made_easy script PID is 4555
+	- For the second iteration: bash PID is 4404 and that the 3-show_your_bash_pid_made_easy script PID is 4557
+	
