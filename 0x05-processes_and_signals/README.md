@@ -66,3 +66,6 @@ For those who want to know more and learn about all signals, check out [this art
 
 ## Tasks
 
+**0. What is my PID**
+
+Write a Bash script that displays its own PID.
