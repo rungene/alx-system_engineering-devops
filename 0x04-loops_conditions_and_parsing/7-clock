@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Bash script that displays the time for 12 hours and 59 minutes:
+# Initialize the counter
+h=0
+#Iterate the loop for 10 times
+while [ $h -le 12 ]
+do
+	#print the value of n on each iteration
+	echo "Hour: $h"
+	m=1
+	while [ $m -le 59 ]
+	do
+		echo "$m"
+	# Increament the value of m in each iteration
+		(( m++ ))
+	done
+	# Increament the value of h in each iteration
+	(( h++ ))
+done
