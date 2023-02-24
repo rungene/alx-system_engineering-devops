@@ -196,3 +196,6 @@ Requirements:
 
 	- You must use the for loop (while and until are forbidden)
 	- Do not display hidden files
+
+**9. To file, or not to file**
+
