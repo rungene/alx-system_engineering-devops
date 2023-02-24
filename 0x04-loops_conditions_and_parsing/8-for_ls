@@ -2,5 +2,5 @@
 # Displays the content directory in a list format after character '-'
 for FILE in *;
 do
-	echo $FILE | cut -f2 -d"-"
+	echo "$FILE" | cut -f2 -d"-"
 done
