@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script displays numbers from 1 to 100 and:
+# Displays FizzBuzz when the number is a multiple of 3 and 5
+# Displays Fizz when the number is multiple of 3
+# Displays Buzz when the number is a multiple of 5
+# Otherwise, displays the number
+# counter initialised
+n=1
+#Iterate the loop for 100 times
+while [ $n -le 100 ]
+do
+	if ((n % 3 == 0 && n % 5));
+	then
+		echo "FizzBuzz"
+	elif ((n % 3 == 0))
+	then
+		echo "Fizz"
+	elif ((n % 5 == 0))
+	then
+		echo "Buzz"
+	else
+		echo "$n"
+	fi
+	# Increament the value of n in each iteration
+	(( n++ ))
+done
