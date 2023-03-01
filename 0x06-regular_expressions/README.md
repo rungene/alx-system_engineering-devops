@@ -74,3 +74,27 @@ SchoolSchool$
 sylvain@ubuntu$ ./0-simply_match_school.rb "Grace Hopper" | cat -e
 $
 ```
+
+Repo:
+
+	- GitHub repository: alx-system_engineering-devops
+	- Directory: 0x06-regular_expressions
+	- File: 0-simply_match_school.rb
+
+```
+1. Repetition Token #0 
+```
+
+![regular expression](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230228T180029Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=934f556958b77060c4b5f75cbc2bc50e2463104a785b1901dc61910e686fc495)
+
+Requirements:
+
+	- Find the regular expression that will match the above cases
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+
+Repo:
+	
+	- GitHub repository: alx-system_engineering-devops
+	- Directory: 0x06-regular_expressions
+	- File: 1-repetition_token_0.rb
