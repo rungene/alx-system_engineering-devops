@@ -116,3 +116,19 @@ Repo:
 	- Directory: 0x06-regular_expressions
 	- File: 2-repetition_token_1.rb
 
+```
+3. Repetition Token #2 
+```
+
+![regular expression](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230228T180029Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=da23bd4eefb9427df1abc18afa60c1f761d5fefb1a436212854332f8c1bff382)
+
+Requirements:
+
+	- Find the regular expression that will match the above cases
+	- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+
+Repo:
+
+	- GitHub repository: alx-system_engineering-devops
+	- Directory: 0x06-regular_expressions
+	- File: 3-repetition_token_2.rb
