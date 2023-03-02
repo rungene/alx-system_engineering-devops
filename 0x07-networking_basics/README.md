@@ -143,3 +143,36 @@ Repo:
 	- GitHub repository: alx-system_engineering-devops
 	- Directory: 0x07-networking_basics
 	- File: 0-OSI_model
+
+```
+1. Types of network 
+```
+
+![LAN](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230302%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230302T140620Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b81828c89ab22b2796af28073634f57235fc47959f56c3629411841696665da6)
+
+LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
+
+Questions:
+
+What type of network a computer in local is connected to?
+
+	1. Internet
+	2. WAN
+	3. LAN
+
+What type of network could connect an office in one building to another office in a building a few streets away?
+
+	1. Internet
+	2. WAN
+	3. LAN
+
+What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?
+	1. Internet
+	2. WAN
+	3. LAN
+
+Repo:
+
+	- GitHub repository: alx-system_engineering-devops
+	- Directory: 0x07-networking_basics
+	- File: 1-types_of_network
