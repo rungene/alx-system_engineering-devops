@@ -176,3 +176,29 @@ Repo:
 	- GitHub repository: alx-system_engineering-devops
 	- Directory: 0x07-networking_basics
 	- File: 1-types_of_network
+
+```
+2. MAC and IP address 
+```
+
+![MAC Address](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230302%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230302T140620Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=846d9021bc43bd1fb82bdeb8ceb957e15c84012361b06e693ffb7650d1e842f2)
+
+Questions:
+
+What is a MAC address?
+
+	1. The name of a network interface
+	2. The unique identifier of a network interface
+	3. A network interface
+
+What is an IP address?
+
+	1. Is to devices connected to a network what postal address is to houses
+	2. The unique identifier of a network interface
+	3. Is a number that network devices use to connect to networks
+
+Repo:
+
+	- GitHub repository: alx-system_engineering-devops
+	- Directory: 0x07-networking_basics
+	- File: 2-MAC_and_IP_address
