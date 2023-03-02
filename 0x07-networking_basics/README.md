@@ -202,3 +202,34 @@ Repo:
 	- GitHub repository: alx-system_engineering-devops
 	- Directory: 0x07-networking_basics
 	- File: 2-MAC_and_IP_address
+
+```
+3. UDP and TCP 
+```
+
+![UDP and TCP](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230302%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230302T140620Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=fdcbc17e262c9b2218afac45a7fe97dccba8ef3d1afdcc62fd8fa2a4e5fadb3a)
+
+Let’s fill the empty parts in the drawing above.
+
+Questions:
+
+	. Which statement is correct for the TCP box: 
+
+		1. It is a protocol that is transferring data in a slow way but surely
+		2. It is a protocol that is transferring data in a fast way and might loss data along in the process
+
+	. Which statement is correct for the UDP box: 
+		
+		1. It is a protocol that is transferring data in a slow way but surely
+		2. It is a protocol that is transferring data in a fast way and might loss data along in the process
+	
+	. Which statement is correct for the TCP worker: 
+
+		1. Have you received boxes x, y, z?
+		2. May I increase the rate at which I am sending you boxes?
+
+Repo:
+
+	- GitHub repository: alx-system_engineering-devops
+	- Directory: 0x07-networking_basics
+	- File: 3-UDP_and_TCP
