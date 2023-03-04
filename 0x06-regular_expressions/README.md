@@ -271,6 +271,7 @@ $ ./100-textme.rb 'Feb 1 11:00:00 ip-10-0-64-11 mdr: 2016-02-01 11:00:00 Sent SM
 $
 ```
 Repo:
+
 	- GitHub repository: alx-system_engineering-devops
 	- Directory: 0x06-regular_expressions
 	- File: 100-textme.rb
