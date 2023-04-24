@@ -4,4 +4,5 @@
 
 # Background Context
 
+![](images/image.gif)
 
