@@ -3,5 +3,11 @@
 sudo apt-get -y  update
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
+# Configure nginx
+echo "server {
+        listen 80;
+        location / {
+                echo 'Hello World!';
+        }
+}" > /etc/nginx/sites-available/default
 sudo service nginx restart
-echo 'Hello World!' | sudo tee /var/www/html/index.html
