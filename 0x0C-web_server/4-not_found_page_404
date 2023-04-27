@@ -15,8 +15,11 @@ sudo service nginx start
 echo "Ceci n'est pas une page." | sudo tee /var/www/html/404.html
 
 # Edit the default Nginx configuration file to set the custom 404 error page
-sudo sed -i 's/#error_page 404/error_page 404/' /etc/nginx/sites-available/default
-sudo sed -i 's/#\tlocation \/ {\n/\tlocation \/ {\n\t\terror_page 404 \/404.html;\n/' /etc/nginx/sites-available/default
+error_string="\\\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}"
+sudo sed -i "20i $error_string" /etc/nginx/sites-available/default
 
 # Restart Nginx
 sudo service nginx restart
+
+# Reload
+sudo service nginx reload
