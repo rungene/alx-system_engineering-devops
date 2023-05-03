@@ -12,7 +12,7 @@ sudo apt-get -y install nginx
 sudo service nginx start
 
 # Create a custom 404 error page with the required string
-echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/custom_404.html
+sudo sh -c "echo 'Ceci n'\''est pas une page' > /usr/share/nginx/html/404.html"
 # Edit the default Nginx configuration file to set the custom 404 error page
 sudo sed -i 's/#error_page 404/error_page 404/' /etc/nginx/sites-available/default
 sudo sed -i '/error_page 404/a \\\n\tlocation = /404 {\n\t\tinternal;\n\t\troot /usr/share/nginx/html;\n\t\tinclude /etc/nginx/mime.types;\n\t}' /etc/nginx/sites-available/default
