@@ -2,7 +2,5 @@
 # Configure your Nginx server with automation in mind
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo service nginx start
 sudo sed -i "16i \\\tadd_header X-Served-By 123136-web-01;" /etc/nginx/nginx.conf
 sudo service nginx restart
-sudo service nginx reload
