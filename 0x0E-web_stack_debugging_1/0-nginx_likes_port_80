@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# automates the installation and management of the Nginx service on Ubuntu Linux
+sudo apt-get -y  update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo service nginx restart
+# Disable the Nginx service from starting automatically at boot
+sudo systemctl disable nginx
