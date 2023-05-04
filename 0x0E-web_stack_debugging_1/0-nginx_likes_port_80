@@ -4,5 +4,3 @@ sudo apt-get -y  update
 sudo apt-get -y upgrade
 sudo apt-get -y install nginx
 sudo service nginx restart
-# Disable the Nginx service from starting automatically at boot
-sudo systemctl disable nginx
