@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# automates the installation and management of the Nginx service on Ubuntu Linux
-sudo apt-get -y  update
-sudo apt-get -y upgrade
-sudo apt-get -y install nginx
-sudo service nginx restart
+# correcting 0.0.0.0:8080 failed (98: Address already in use
+cp -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
