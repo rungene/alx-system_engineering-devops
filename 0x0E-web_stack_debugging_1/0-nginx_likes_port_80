@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# correcting 0.0.0.0:8080 failed (98: Address already in use
+cp -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
