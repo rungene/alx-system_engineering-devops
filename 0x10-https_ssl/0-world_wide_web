@@ -1,24 +1,20 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2086
 # script that will display information about subdomains.
-domain="rungene.tech"
 
-# subdomains to query - array
-subdomains=("www" "lb-01" "web-01" "web-02")
+get_subdomain_info() {
+  # subdomains to query - array
+  subdomains=("www" "lb-01" "web-01" "web-02")
 
-#loop over subdomains, display: SUB_DOMAIN, RECORD_TYPE, DESTINATION
-for subdomain in "${subdomains[@]}"
-do
-  # DNS recors for subdomain
-  records_dns=$(dig +short $subdomain.$domain)
+  # the second argument to the Bash script is empty or not.
+  if [ -z "$2" ]; then
+    # user didn't provide any second argument, and the script will display information for all subdomains.
+    for subdomain in "${subdomains[@]}"; do
+      dig "$subdomain.$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{split($0, SUBDOMAIN, "."); print "The subdomain "SUBDOMAIN[1] " is a " $4 " record and points to " $5}'
+    done
+  else
+    dig "$2.$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{split($0, SUBDOMAIN, "."); print "The subdomain " SUBDOMAIN[1] " is a " $4 " record and points to " $5}'
+  fi
+}
 
-  # Loop over the records(DNS) to display display details required
-  while read -r record_dns; do
-    # From record_dns extract record type and destination
-    a_record=$(echo $record_dns | awk '{print $1}')
-    destination=$(echo $record_dns | awk '{print $2}')
-    
-    # Display:SUB_DOMAIN, RECORD_TYPE, DESTINATION
-    echo "The subdomain $subdomain is a $a_record record and points to $destination"
-  done <<< "$records_dns"
-done
+get_subdomain_info "$1" "$2"
