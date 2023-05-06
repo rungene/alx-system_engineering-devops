@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2086
+# script that will display information about subdomains.
+domain="rungene.tech"
+
+# subdomains to query - array
+subdomains=("www" "lb-01" "web-01" "web-02")
+
+#loop over subdomains, display: SUB_DOMAIN, RECORD_TYPE, DESTINATION
+for subdomain in "${subdomains[@]}"
+do
+  # DNS recors for subdomain
+  records_dns=$(dig +short $subdomain.$domain)
+
+  # Loop over the records(DNS) to display display details required
+  while read -r record_dns; do
+    # From record_dns extract record type and destination
+    a_record=$(echo $record_dns | awk '{print $1}')
+    destination=$(echo $record_dns | awk '{print $2}')
+    
+    # Display:SUB_DOMAIN, RECORD_TYPE, DESTINATION
+    echo "The subdomain $subdomain is a $a_record record and points to $destination"
+  done <<< "$records_dns"
+done
