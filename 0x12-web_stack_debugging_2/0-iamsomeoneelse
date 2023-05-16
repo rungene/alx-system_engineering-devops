@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#  accepts one argument run the whoami command under the user passed as an argument
+
+if [ $# -eq 0 ]; then
+  echo "Please provide user passed as args"
+  exit 1
+fi
+
+#argument passed
+user=$1
+
+#run the whomami command under specified user
+sudo -u "$user" whoami
