@@ -15,7 +15,7 @@ if __name__ == "__main__":
     json_users = response.json()
     my_dict = {}
     for user in json_users:
-        user_name = user.get('name')
+        user_name = user.get('username')
         user_id = user.get('id')
         url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
         url = url + '/todos/'
