@@ -21,7 +21,9 @@ def recurse(subreddit, hot_list=[], after=None):
     headers = {'User-Agent': 'Mozilla/5.0'}
 
     try:
-        response = requests.get(url, headers=headers, allow_redirects=False)
+        params = {'after': after} if after else None
+        response = requests.get(url, headers=headers, params=params,
+                                allow_redirects=False)
 
         # Check if request was successful
         if response.status_code == 200:
