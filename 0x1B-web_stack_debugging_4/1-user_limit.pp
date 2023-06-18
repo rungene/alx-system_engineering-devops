@@ -1,12 +1,10 @@
 # Change the OS configuration so that it is possible to login with the holberton user and open a file without any error message.
-file_line { 'holberton-soft-nofile':
-  path  => '/etc/security/limits.conf',
-  line  => 'holberton soft nofile 4096',
-  match => '^holberton\s+soft\s+nofile',
+exec { 'holberton-soft-nofile':
+  command => 'sed -i "/holberton soft/s/4/4096/" /etc/security/limits.conf',
+  path    => '/usr/local/bin:/bin/',
 }
 
-file_line { 'holberton-hard-nofile':
-  path  => '/etc/security/limits.conf',
-  line  => 'holberton hard nofile 8192',
-  match => '^holberton\s+hard\s+nofile',
+exec { 'holberton-hard-nofile':
+  command => 'sed -i "/holberton hard/s/5/8192/" /etc/security/limits.conf',
+  path    => '/usr/local/bin:/bin/',
 }
