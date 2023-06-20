@@ -1,6 +1,6 @@
 # Correcting too many open file error nginx
 exec { 'increase_ulimit':
-  path    => '/usr/local/bin:/bin/',
+  path    => '/usr/local/bin/:/bin/',
   command => 'sed -i "s/15/4096/" /etc/default/nginx'
 }
 
